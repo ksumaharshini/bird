@@ -1,0 +1,243 @@
+/* Reset default margin and padding */
+body{
+    background-image: radial-gradient(rgb(166, 19, 120),rgb(117, 226, 248));
+}
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the size and shape of the bird face */
+#bird-face {
+    width: 200px;
+    height: 200px;
+    margin: 300px 0px 0px 700px;
+    background: #FFC107; /* Yellow */
+    border-radius: 50%;
+    position: relative;
+    filter: drop-shadow(-10px -10px 90px #FFC107);
+    transition: filter 2s;
+}
+
+/* Draw the beak of the bird */
+#beak {
+    position: absolute;
+    top: 80px;
+    left: 37%;
+    transform: rotateX(180deg);
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-radius: 30%;
+    border-bottom: 40px solid rgba(190, 65, 65, 0.685); /* Orange */
+    transform-origin: bottom;
+}
+
+/* Draw the left eye of the bird */
+#leye {
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    width: 60px;
+    height: 40px;
+    background-color: #FFF; /* White */
+    border-radius: 50%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 2s;
+}
+
+/* Draw the right eye of the bird */
+#reye {
+    position: absolute;
+    top: 70px;
+    right: 35px;
+    width: 60px;
+    height: 40px;
+    background-color: #FFF; /* White */
+    border-radius: 50%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 2s;
+}
+
+/* Draw the left pupil of the bird */
+#lpupil {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    width: 20px;
+    height: 20px;
+    background-color: #000; /* Black */
+    border-radius: 50%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    transition: background-color 2s;
+}
+
+/* Draw the right pupil of the bird */
+#rpupil {
+    position: absolute;
+    top: 80px;
+    right: 55px;
+    width: 20px;
+    height: 20px;
+    background-color: #000; /* Black */
+    border-radius: 50%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    transition: background-color 2s;
+}
+#drop1{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin: 13px 0px 0px 13px;
+    filter: drop-shadow(-10px -10px 90px white);
+    transition: background-color 2s;
+}
+#drop3{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin: 8px 0px 0px 11px;
+    filter: drop-shadow(-10px -10px 90px white);
+    transition: background-color 2s;
+}
+#drop2{
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin: 13px 0px 0px 13px;
+    filter: drop-shadow(-10px -10px 90px white);
+    transition: background-color 2s;
+}
+#drop4{
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin: 8px 0px 0px 11px;
+    filter: drop-shadow(-10px -10px 90px white);
+    transition: background-color 2s;
+}
+#lbrow{
+    position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 30%;
+  height: 10%;
+  rotate: -20deg;
+  border-radius: 50%;
+  border-top: 5px solid black;
+  transition: rotate 2s, border-top 2s, top 2s, left 2s;
+  
+}
+#rbrow{
+    position: absolute;
+  top: 25%;
+  left: 55%;
+  width: 30%;
+  height: 10%;
+  rotate: 20deg;
+  border-radius: 50%;
+  border-top: 5px solid black;
+  transition: rotate 2s, border-top 2s, top 2s, left 2s;
+  
+}
+#hair1{
+    position: absolute;
+  top: -10%;
+  left: 26%;
+  width: 30%;
+  height: 10%;
+  rotate: -110deg;
+  border-radius: 50%;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  transition: border-top 3s, border-right 3s;
+
+  
+}
+#hair2{
+    position: absolute;
+  top: -10%;
+  left: 34%;
+  width: 30%;
+  height: 10%;
+  rotate: -90deg;
+  border-radius: 50%;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  transition: border-top 3s, border-right 3s;
+  
+}
+#hair3{
+    position: absolute;
+  top: -8.5%;
+  left: 41%;
+  width: 30%;
+  height: 10%;
+  rotate: -70deg;
+  border-radius: 50%;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  transition: border-top 3s, border-right 3s;
+  
+}
+.image-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #3123ca;
+    box-shadow: 0 4px 8px 0 rgba(193, 37, 37, 0.2);
+    transition: 0.3s;
+}
+h1 {
+    text-align: center;
+    background-color: #19bfe4;
+    color: rgb(96, 39, 3);
+    margin: 0;
+    padding: 20px;
+}
+
+#bird-face:hover{
+    background: linear-gradient(0deg, rgba(255,193,7,1) 0%, rgba(253,45,45,1) 100%);
+    filter: drop-shadow(-10px -10px 90px red);
+    
+    #lpupil,#rpupil{
+        background-color: red;
+    }
+
+    #beak{
+        border-bottom: 40px solid #e05126;
+    }
+    #lbrow{
+        top: 27%;
+        left: 18%;
+        rotate:25deg;
+        border-top: 10px solid black;
+    }
+    #rbrow{
+        top: 27%;
+        left: 52%;
+        rotate:-25deg;
+        border-top: 10px solid black;
+    }
+    #hair1,#hair2,#hair3 {
+        border-top: 1.5px solid brown;
+        border-right: 1.5px solid red;
+    }
+    #leye,#reye{
+        background-color: lightgoldenrodyellow;
+    }
+    #drop1,#drop2,#drop3,#drop4 {
+        background-color: gold;
+    }
+
+}
